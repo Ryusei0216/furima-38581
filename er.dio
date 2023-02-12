@@ -1,58 +1,64 @@
 <mxfile host="65bd71144e">
     <diagram id="j6ATTnJugHU9-YTmBMqu" name="ページ1">
-        <mxGraphModel dx="984" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+        <mxGraphModel dx="542" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="3" value="ユーザー情報" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="3" value="ユーザー情報" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="120" y="220" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="商品情報" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="6" value="商品情報" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="600" y="200" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="&lt;ul&gt;&lt;li&gt;ニックネーム&lt;/li&gt;&lt;li&gt;メールアドレス&lt;/li&gt;&lt;li&gt;パスワード&lt;/li&gt;&lt;li&gt;お名前&lt;/li&gt;&lt;li&gt;お名前(カナ)&lt;/li&gt;&lt;li&gt;生年月日&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                <mxCell id="8" value="&lt;ul&gt;&lt;li&gt;ニックネーム&lt;/li&gt;&lt;li&gt;メールアドレス&lt;/li&gt;&lt;li&gt;パスワード&lt;/li&gt;&lt;li&gt;お名前&lt;/li&gt;&lt;li&gt;お名前(カナ)&lt;/li&gt;&lt;li&gt;生年月日&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
                     <mxGeometry x="120" y="260" width="160" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;&quot;&gt;画像&lt;/li&gt;&lt;li style=&quot;&quot;&gt;商品名&lt;/li&gt;&lt;li style=&quot;&quot;&gt;説明&lt;/li&gt;&lt;li style=&quot;&quot;&gt;出品者&lt;/li&gt;&lt;li style=&quot;&quot;&gt;価格&lt;/li&gt;&lt;li style=&quot;&quot;&gt;カテゴリ&lt;/li&gt;&lt;li style=&quot;&quot;&gt;状態&lt;/li&gt;&lt;li&gt;配送料負担&lt;/li&gt;&lt;li style=&quot;&quot;&gt;地域&lt;/li&gt;&lt;li style=&quot;&quot;&gt;配送日数&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                <mxCell id="9" value="&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li style=&quot;&quot;&gt;画像&lt;/li&gt;&lt;li style=&quot;&quot;&gt;商品名&lt;/li&gt;&lt;li style=&quot;&quot;&gt;説明&lt;/li&gt;&lt;li style=&quot;&quot;&gt;出品者&lt;/li&gt;&lt;li style=&quot;&quot;&gt;価格&lt;/li&gt;&lt;li style=&quot;&quot;&gt;カテゴリ&lt;/li&gt;&lt;li style=&quot;&quot;&gt;状態&lt;/li&gt;&lt;li&gt;配送料負担&lt;/li&gt;&lt;li style=&quot;&quot;&gt;地域&lt;/li&gt;&lt;li style=&quot;&quot;&gt;配送日数&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
                     <mxGeometry x="600" y="240" width="160" height="240" as="geometry"/>
                 </mxCell>
-                <mxCell id="vP-3ZubpcYD05PrQwzHD-49" value="" style="edgeStyle=none;html=1;" parent="1" source="10" target="11" edge="1">
+                <mxCell id="vP-3ZubpcYD05PrQwzHD-49" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="10" target="11">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="発送先情報" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="10" value="発送先情報" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="600" y="600" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="&lt;ul&gt;&lt;li&gt;郵便番号&lt;/li&gt;&lt;li&gt;都道府県&lt;/li&gt;&lt;li&gt;市区町村&lt;/li&gt;&lt;li&gt;番地&lt;/li&gt;&lt;li&gt;建物名&lt;/li&gt;&lt;li&gt;電話番号&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                <mxCell id="11" value="&lt;ul&gt;&lt;li&gt;郵便番号&lt;/li&gt;&lt;li&gt;都道府県&lt;/li&gt;&lt;li&gt;市区町村&lt;/li&gt;&lt;li&gt;番地&lt;/li&gt;&lt;li&gt;建物名&lt;/li&gt;&lt;li&gt;電話番号&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
                     <mxGeometry x="600" y="640" width="160" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="" style="endArrow=ERmany;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;startSize=6;startArrow=ERone;startFill=0;" parent="1" source="8" edge="1">
+                <mxCell id="12" value="" style="endArrow=ERmany;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;startSize=6;startArrow=ERone;startFill=0;" edge="1" parent="1" source="8">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="440" y="520" as="sourcePoint"/>
                         <mxPoint x="600" y="340" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="vP-3ZubpcYD05PrQwzHD-52" value="&lt;ul&gt;&lt;li&gt;購入者&lt;/li&gt;&lt;li&gt;商品&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                <mxCell id="vP-3ZubpcYD05PrQwzHD-52" value="&lt;ul&gt;&lt;li&gt;購入者&lt;/li&gt;&lt;li&gt;商品&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
                     <mxGeometry x="120" y="640" width="160" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="vP-3ZubpcYD05PrQwzHD-53" value="購入記録" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="vP-3ZubpcYD05PrQwzHD-53" value="購入記録" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="120" y="600" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="vP-3ZubpcYD05PrQwzHD-54" value="" style="endArrow=ERmany;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endFill=0;startSize=6;startArrow=ERone;startFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="8" target="vP-3ZubpcYD05PrQwzHD-53" edge="1">
+                <mxCell id="vP-3ZubpcYD05PrQwzHD-54" value="" style="endArrow=ERmany;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endFill=0;startSize=6;startArrow=ERone;startFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8" target="vP-3ZubpcYD05PrQwzHD-53">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="254" y="460" as="sourcePoint"/>
                         <mxPoint x="574" y="460" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="vP-3ZubpcYD05PrQwzHD-55" value="" style="endArrow=ERone;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endFill=0;startSize=6;startArrow=ERone;startFill=0;" parent="1" source="11" edge="1">
+                <mxCell id="vP-3ZubpcYD05PrQwzHD-55" value="" style="endArrow=ERone;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endFill=0;startSize=6;startArrow=ERmany;startFill=0;" edge="1" parent="1" source="11">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="330" y="495" as="sourcePoint"/>
                         <mxPoint x="280" y="675" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="vP-3ZubpcYD05PrQwzHD-59" value="" style="endArrow=ERone;html=1;exitX=0.981;exitY=-0.05;exitDx=0;exitDy=0;endFill=0;startSize=6;startArrow=ERone;startFill=0;exitPerimeter=0;strokeWidth=1;targetPerimeterSpacing=0;jumpSize=10;" parent="1" source="vP-3ZubpcYD05PrQwzHD-53" target="9" edge="1">
+                <mxCell id="vP-3ZubpcYD05PrQwzHD-57" value="" style="endArrow=ERone;html=1;startSize=6;entryX=-0.019;entryY=0.679;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0;exitDx=0;exitDy=0;startArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="vP-3ZubpcYD05PrQwzHD-53" target="9">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="254" y="510" as="sourcePoint"/>
-                        <mxPoint x="574" y="510" as="targetPoint"/>
+                        <mxPoint x="430" y="530" as="sourcePoint"/>
+                        <mxPoint x="480" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="vP-3ZubpcYD05PrQwzHD-58" value="" style="endArrow=ERone;html=1;startSize=6;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=ERone;startFill=0;endFill=0;" edge="1" parent="1" source="10" target="9">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="290" y="610" as="sourcePoint"/>
+                        <mxPoint x="606.96" y="412.96000000000004" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>
