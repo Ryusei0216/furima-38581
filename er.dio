@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="j6ATTnJugHU9-YTmBMqu" name="ページ1">
-        <mxGraphModel dx="984" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+        <mxGraphModel dx="1434" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -20,10 +20,10 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="発送先情報" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="600" y="600" width="160" height="40" as="geometry"/>
+                    <mxGeometry x="600" y="590" width="160" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="&lt;ul&gt;&lt;li&gt;郵便番号&lt;/li&gt;&lt;li&gt;都道府県&lt;/li&gt;&lt;li&gt;市区町村&lt;/li&gt;&lt;li&gt;番地&lt;/li&gt;&lt;li&gt;建物名&lt;/li&gt;&lt;li&gt;電話番号&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-                    <mxGeometry x="600" y="640" width="160" height="140" as="geometry"/>
+                <mxCell id="11" value="&lt;ul&gt;&lt;li&gt;郵便番号&lt;/li&gt;&lt;li&gt;都道府県&lt;/li&gt;&lt;li&gt;市区町村&lt;/li&gt;&lt;li&gt;番地&lt;/li&gt;&lt;li&gt;建物名&lt;/li&gt;&lt;li&gt;電話番号&lt;/li&gt;&lt;li&gt;購入者&lt;/li&gt;&lt;li&gt;商品&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="630" width="160" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="12" value="" style="endArrow=ERmany;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endFill=0;startSize=6;startArrow=ERone;startFill=0;" parent="1" source="8" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -49,7 +49,7 @@
                         <mxPoint x="280" y="675" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="vP-3ZubpcYD05PrQwzHD-59" value="" style="endArrow=ERone;html=1;exitX=0.981;exitY=-0.05;exitDx=0;exitDy=0;endFill=0;startSize=6;startArrow=ERone;startFill=0;exitPerimeter=0;strokeWidth=1;targetPerimeterSpacing=0;jumpSize=10;" parent="1" source="vP-3ZubpcYD05PrQwzHD-53" target="9" edge="1">
+                <mxCell id="vP-3ZubpcYD05PrQwzHD-59" value="" style="endArrow=ERone;html=1;exitX=0.981;exitY=-0.05;exitDx=0;exitDy=0;endFill=0;startSize=6;startArrow=ERone;startFill=0;exitPerimeter=0;strokeWidth=1;targetPerimeterSpacing=0;jumpSize=10;" edge="1" parent="1" source="vP-3ZubpcYD05PrQwzHD-53" target="9">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="254" y="510" as="sourcePoint"/>
                         <mxPoint x="574" y="510" as="targetPoint"/>

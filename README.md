@@ -35,7 +35,7 @@
 ### Association
 
 - belongs_to : user
-- belongs_to : purchase_record
+- has_one    : purchase_record
 
 ## purchase_records テーブル
 
@@ -60,6 +60,8 @@
 | house_number       | string       | null: false                    |
 | building           | text         |                                |
 | phone_number       | text         | null: false                    |
+| user               | references   | null: false, foreign_key: true |
+| item               | references   | null: false, foreign_key: true |
 
 ### Association
 
