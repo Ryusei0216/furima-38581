@@ -9,8 +9,8 @@
 | nickname           | string       | null: false                    |
 | first_name         | string       | null: false                    |
 | last_name          | string       | null: false                    |
-| first_name(kana)   | string       | null: false                    |
-| last_name(kana)    | string       | null: false                    |
+| first_name_kana    | string       | null: false                    |
+| last_name_kana     | string       | null: false                    |
 | date_of_birth      | date         | null: false                    |
 
 ### Association
@@ -29,8 +29,8 @@
 | category_id        | integer      | null: false                    |
 | status_id          | integer      | null: false                    |
 | charge_id          | integer      | null: false                    |
-| area_id            | integer      | null: false                    |
-| dates_id           | integer      | null: false                    |
+| prefecture_id      | integer      | null: false                    |
+| day_id             | integer      | null: false                    |
 
 ### Association
 
@@ -58,10 +58,9 @@
 | prefecture_id      | integer      | null: false                    |
 | municipalities     | string       | null: false                    |
 | house_number       | string       | null: false                    |
-| building           | text         |                                |
-| phone_number       | text         | null: false                    |
-| user               | references   | null: false, foreign_key: true |
-| item               | references   | null: false, foreign_key: true |
+| building           | string       |                                |
+| phone_number       | string       | null: false                    |
+| purchase_record    | references   | null: false, foreign_key: true |
 
 ### Association
 
