@@ -1,16 +1,17 @@
 class Item < ApplicationRecord
 
     #バリデーション
-    validates :item_name,     presence: true
-    validates :description,   presence: true   
-    validates :user,          presence: true                 
-    validates :price,         {presence: true, format: {with: /\A[0-9]+\z/ }}
-    validates :category_id,   {presence: true, numericality: {other_than:1, message: "can't be blank"}}
-    validates :status_id,     {presence: true, numericality: {other_than:1, message: "can't be blank"}}         
-    validates :charge_id,     {presence: true, numericality: {other_than:1, message: "can't be blank"}}       
-    validates :prefecture_id, {presence: true, numericality: {other_than:1, message: "can't be blank"}}    
-    validates :day_id,        {presence: true, numericality: {other_than:1, message: "can't be blank"}}
-    validates :image,         presence: true
+    validates :item_name,     {presence: true, presence:{message: "can't be blank"}}
+    validates :description,   {presence: true, presence:{message: "can't be blank"}}   
+    validates :price,         presence: true
+    validates :price,         numericality: {greater_than_or_equal_to:300, less_than_or_equal_to:9_999_999,message: "is Out of setting range"}
+    validates :price,         numericality: {only_integer:true, message: "is not Half-width number"}
+    validates :category_id,   numericality: {other_than:1, message: "can't be blank"}
+    validates :status_id,     numericality: {other_than:1, message: "can't be blank"}
+    validates :charge_id,     numericality: {other_than:1, message: "can't be blank"}
+    validates :prefecture_id, numericality: {other_than:1, message: "can't be blank"}  
+    validates :day_id,        numericality: {other_than:1, message: "can't be blank"}
+    validates :image,         {presence: true, presence:{message: "can't be blank"}}
 
     #アソシエーション
     belongs_to :user
