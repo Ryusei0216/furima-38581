@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
   const CalcTax = Math.floor(inputValue * 0.1);
   addTaxDom.innerHTML = CalcTax.toLocaleString();
   const addProfit = document.getElementById("profit");
-  const CalcProfit = Math.ceil(inputValue - (inputValue * 0.1));
+  const CalcProfit = Math.floor(inputValue - (inputValue * 0.1));
   addProfit.innerHTML = CalcProfit.toLocaleString();
   });
 });

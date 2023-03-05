@@ -48,8 +48,13 @@ RSpec.describe Item, type: :model do
         @item.valid?
         expect(@item.errors.full_messages).to include "Price is not Half-width number"
       end
-      it "priceが設定範囲外だと商品は保存できない" do
-        @item.price = 200
+      it "priceが300より小さいと商品は保存できない" do
+        @item.price = 299
+        @item.valid?
+        expect(@item.errors.full_messages).to include "Price is Out of setting range"
+      end
+      it "priceが10,000,000以上の値では保存できない" do
+        @item.price = 10000000
         @item.valid?
         expect(@item.errors.full_messages).to include "Price is Out of setting range"
       end
@@ -57,24 +62,49 @@ RSpec.describe Item, type: :model do
         @item.category_id = nil
         @item.valid?
         expect(@item.errors.full_messages).to include "Category can't be blank"
-      end      
+      end
+      it "category_idで1(---)を選択すると商品は保存できない" do
+        @item.category_id = 1
+        @item.valid? 
+        expect(@item.errors.full_messages).to include "Category can't be blank"
+      end        
       it "status_idが未選択だと商品は保存できない" do
         @item.status_id = nil
         @item.valid?
         expect(@item.errors.full_messages).to include "Status can't be blank"
-      end      
+      end
+      it "status_idで1(---)を選択すると商品は保存できない" do
+        @item.status_id = 1
+        @item.valid?
+        expect(@item.errors.full_messages).to include "Status can't be blank"
+      end
       it "charge_idが未選択だと商品は保存できない" do
         @item.charge_id = nil
         @item.valid?
         expect(@item.errors.full_messages).to include "Charge can't be blank"
-      end      
+      end
+      it "charge_idで1(---)を選択すると商品は保存できない" do
+        @item.charge_id = 1
+        @item.valid?
+        expect(@item.errors.full_messages).to include "Charge can't be blank"
+      end
       it "prefecture_idが未選択だと商品は保存できない" do
         @item.prefecture_id = nil
         @item.valid?
         expect(@item.errors.full_messages).to include "Prefecture can't be blank"
-      end      
+      end
+      it "prefecture_idで1(---)を選択すると商品は保存できない" do
+        @item.prefecture_id = 1
+        @item.valid?
+        expect(@item.errors.full_messages).to include "Prefecture can't be blank"
+      end            
       it "day_idが未選択だと商品は保存できない" do
         @item.day_id = nil
+        @item.valid?
+        expect(@item.errors.full_messages).to include "Day can't be blank"
+      end
+      it "day_idで1(---)を選択すると商品は保存できない" do
+        @item.day_id = 1
         @item.valid?
         expect(@item.errors.full_messages).to include "Day can't be blank"
       end
