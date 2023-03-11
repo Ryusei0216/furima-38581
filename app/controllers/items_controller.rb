@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
   #before_action :move_to_index, except: [:index]
-  before_action :authenticate_user!, only: [:new, :edit]
-  before_action :definition_item, only:[:show,:edit,:update]
+  before_action :authenticate_user!, only: [:new, :edit, :destroy]
+  before_action :set_item, only:[:show,:edit,:update,:destroy]
 
   def index
     @items = Item.all.order("created_at DESC")
@@ -39,6 +39,15 @@ class ItemsController < ApplicationController
     end
   end
 
+  def destroy
+    #削除が完了したら、トップページに遷移する
+    if @item.destroy
+      redirect_to root_path
+    else
+      redirect_to root_path
+    end
+  end
+
   private
   #def move_to_index
   #  unless user_signed_in?
@@ -50,7 +59,7 @@ class ItemsController < ApplicationController
     params.require(:item).permit(:image,:item_name,:description,:price,:category_id,:status_id,:charge_id,:prefecture_id,:day_id).merge(user_id: current_user.id)
   end
 
-  def definition_item
+  def set_item
     @item = Item.find(params[:id])
   end
 
