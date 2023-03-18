@@ -14,7 +14,8 @@ class Item < ApplicationRecord
     validates :image,         {presence: true, presence:{message: "can't be blank"}}
 
     #アソシエーション
-    belongs_to :user
+    belongs_to       :user
+    has_one          :purchase_record
     has_one_attached :image
 
     #ActiveHash
