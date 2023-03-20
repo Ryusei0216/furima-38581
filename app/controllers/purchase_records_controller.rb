@@ -4,11 +4,18 @@ class PurchaseRecordsController < ApplicationController
   def index
     @item = Item.find(params[:item_id])
     @record_address = RecordAddress.new
-    redirect_to root_path if current_user == @item.user
+    
+    if current_user == @item.user 
+      redirect_to root_path
+    end
+
+    if (current_user != @item.user) && @item.purchase_record
+      redirect_to root_path
+    end 
+
   end
 
   def create
-    #binding.pry
     @item = Item.find(params[:item_id])
     @record_address = RecordAddress.new(record_address_params)
     if @record_address.valid?

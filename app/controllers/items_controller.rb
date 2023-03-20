@@ -25,10 +25,9 @@ class ItemsController < ApplicationController
   end
 
   def edit
-    #ログアウト状態の場合、ログイン画面へ遷移
-    #unless current_user == @item.user
-    #  redirect_to root_path
-    #end
+    if @item.purchase_record
+      redirect_to root_path
+    end
   end
 
   def update
@@ -59,7 +58,7 @@ class ItemsController < ApplicationController
   end
 
   def contributor_confirmation
-    redirect_to root_path unless current_user == @item.user
+    redirect_to root_path unless current_user == @item.user 
   end
 
 end
