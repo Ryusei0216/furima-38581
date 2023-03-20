@@ -1,6 +1,6 @@
 const pay = () => {
   //PAY.JP公開鍵
-  const payjp = Payjp('pk_test_92c3351ee6653a9f002ced91')
+  const payjp = Payjp(process.env.PAYJP_PUBLIC_KEY);
 
   //elementsインスタンスの生成
   const elements = payjp.elements();
@@ -26,8 +26,9 @@ const pay = () => {
       } else {
         //トークンの生成
         const token = response.id;
+        //console.log(token)
         const renderDom = document.getElementById("charge-form");
-        const tokenObj = `<input value=${token} name='token' type="hidden" >`;
+        const tokenObj = `<input value=${token} name='token' type="hidden" >`; 
         renderDom.insertAdjacentHTML("beforeend", tokenObj);
      }
       //クレカ情報のクリア
