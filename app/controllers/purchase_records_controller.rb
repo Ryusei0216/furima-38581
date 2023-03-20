@@ -1,9 +1,10 @@
 class PurchaseRecordsController < ApplicationController
-  before_action :authenticate_user!, except: :index
+  before_action :authenticate_user!, only: [:index]
 
   def index
     @item = Item.find(params[:item_id])
     @record_address = RecordAddress.new
+    redirect_to root_path if current_user == @item.user
   end
 
   def create
