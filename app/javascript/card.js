@@ -24,9 +24,17 @@ const pay = () => {
     payjp.createToken(numberElement).then(function (response) {
       if (response.error) {
       } else {
+        //トークンの生成
         const token = response.id;
-        console.log(token)
+        const renderDom = document.getElementById("charge-form");
+        const tokenObj = `<input value=${token} name='token' type="hidden" >`;
+        renderDom.insertAdjacentHTML("beforeend", tokenObj);
      }
+      //クレカ情報のクリア
+      numberElement.clear();
+      expiryElement.clear(); 
+      cvcElement.clear();
+      document.getElementById("charge-form").submit();
    });
   });
 
