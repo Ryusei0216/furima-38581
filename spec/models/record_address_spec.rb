@@ -80,6 +80,11 @@ RSpec.describe RecordAddress, type: :model do
         @record_address.valid?
         expect(@record_address.errors.full_messages).to include "Item can't be blank"
       end
+      it 'tokenが紐付いていないと保存できないこと' do
+        @record_address.token = nil
+        @record_address.valid?
+        expect(@record_address.errors.full_messages).to include "Token can't be blank"
+      end
     end
   end
 end

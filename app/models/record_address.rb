@@ -10,11 +10,9 @@ class RecordAddress
     validates :phone_number, length: { minimum:10, maximum: 11}, numericality: { only_integer: true}
     validates :user_id
     validates :item_id
-    #validates :purchase_record_id
     validates :token
   end
   validates :prefecture_id, numericality: {other_than: 1, message: "can't be blank"}
-  #validates :building
 
   #保存処理
   def save
