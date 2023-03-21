@@ -5,13 +5,9 @@ class PurchaseRecordsController < ApplicationController
   def index
     @record_address = RecordAddress.new
     
-    if current_user == @item.user 
+    if (current_user == @item.user) || @item.purchase_record.present?
       redirect_to root_path
     end
-
-    if (current_user != @item.user) && @item.purchase_record
-      redirect_to root_path
-    end 
 
   end
 
